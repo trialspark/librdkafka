@@ -91,9 +91,6 @@ function install_source {
 	make DESTDIR="${destdir}" prefix=/usr install
     local ret=$?
 
-    # Restore
-    export LD_LIBRARY_PATH="$_save_ldp"
-
     if [[ $MKL_DISTRO == osx ]]; then
         mkl_mkvar_append "libcurl" LIBS "-framework CoreFoundation -framework SystemConfiguration"
     fi

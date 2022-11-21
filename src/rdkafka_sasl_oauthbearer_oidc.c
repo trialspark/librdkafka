@@ -267,7 +267,6 @@ void rd_kafka_oidc_token_refresh_cb(rd_kafka_t *rk,
         size_t post_fields_size;
         size_t extension_cnt;
         size_t extension_key_value_cnt = 0;
-        size_t scope_size              = 0;
 
         char set_token_errstr[512];
         char decode_payload_errstr[512];

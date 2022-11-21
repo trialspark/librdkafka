@@ -2072,7 +2072,6 @@ rd_kafka_mock_broker_cmd(rd_kafka_mock_cluster_t *mcluster,
                         rd_assert(mrkb->listen_s != -1 ||
                                   !*"Failed to-create mock broker listener");
 
-                if (!mrkb->up)
                         rd_kafka_mock_broker_close_all(mrkb, "Broker down");
 
                 } else {

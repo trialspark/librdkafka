@@ -147,7 +147,7 @@ void foo (void) {
         # requires base64 encoding from OpenSSL
         mkl_allvar_set WITH_SASL_OAUTHBEARER WITH_SASL_OAUTHBEARER y
 		
-		if [[ $WITH_CURL == y ]]; then
+        if [[ $WITH_CURL == y ]]; then
             mkl_allvar_set WITH_OAUTHBEARER_OIDC WITH_OAUTHBEARER_OIDC y
         fi
 
